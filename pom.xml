@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<TEST_ENVIRONMENT>IT04</TEST_ENVIRONMENT>
+		<TEST_ENVIRONMENT>IT01</TEST_ENVIRONMENT>
 	</properties>
 	
 
@@ -29,22 +29,21 @@
                   <goals>
                      <goal>jmeter</goal>
                   </goals>
-                  <configuration>
+                  
+               </execution>
+             </executions>
+             <configuration>
                      <!-- <testFilesIncluded>
                         <jMeterTestFile>src/test/jmeter/SubscriberInfoApi.jmx</jMeterTestFile>
                      </testFilesIncluded> -->
                      <!-- <testResultsTimestamp>false</testResultsTimestamp> -->
-                     <propertiesUser>
                         <!-- <Threadcount>${Threadcount}</Threadcount>
                         <Loopcount>${Loopcount}</Loopcount>
                         <Rampup>${RampUp}</Rampup> -->
                      <propertiesUser>
 						<TEST_ENVIRONMENT>${TEST_ENVIRONMENT}</TEST_ENVIRONMENT>
 					 </propertiesUser>
-                     </propertiesUser>
                   </configuration>
-               </execution>
-             </executions>
           </plugin>
 		</plugins>
 	</build>
