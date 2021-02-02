@@ -12,7 +12,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<TEST_ENVIRONMENT>IT04</TEST_ENVIRONMENT>
 	</properties>
+	
 
 	<build>
 		<plugins>
@@ -36,6 +38,9 @@
                         <!-- <Threadcount>${Threadcount}</Threadcount>
                         <Loopcount>${Loopcount}</Loopcount>
                         <Rampup>${RampUp}</Rampup> -->
+                     <propertiesUser>
+						<TEST_ENVIRONMENT>${TEST_ENVIRONMENT}</TEST_ENVIRONMENT>
+					 </propertiesUser>
                      </propertiesUser>
                   </configuration>
                </execution>
